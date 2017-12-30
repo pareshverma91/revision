@@ -1,11 +1,17 @@
-# [graph]
+{% tag ["graph"] %}
 
-## depth first, dfs, [search]
-## breadth first, bfs, [search]
-## a star, a\*, [search]
-## dijkstra, [search]
+{% tag ["search"] %}
+{% topicl "depth first", ["dfs"] %}
 
-## floyd-warshall, [all pair shortest path], [path find], [dp]
+{% topicl "breadth first", ["bfs"] %}
+
+{% topicl "a star", ["a\*"] %}
+
+{% topicl "dijkstra" %}
+{% endtag %}
+
+{% topic "floyd-warshall", ["path find", "dp"] %}
+All pair shortest path.
 ```cpp
 for (int k = 0; k < n; k++) {
     for (int i = 0; i < n; i++) {
@@ -15,5 +21,8 @@ for (int k = 0; k < n; k++) {
     }
 }
 ```
+{% endtopic %}
 
-## edmonds-karp, ford-fulkerson, [flow], [max flow], [pending]
+{% topicl "edmonds-karp", ["ford-fulkerson", "max flow", "pending"] %}
+
+{% endtag %}
